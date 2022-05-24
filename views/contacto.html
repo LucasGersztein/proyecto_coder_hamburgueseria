@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krieger | Hamburguesería</title>
+    <link rel="shortcut icon" href="../images/Krieger.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <!--HEADER DE LA PÁGINA-->
+    <nav>
+        <picture>
+            <img src="../images/logoh.svg" alt="Logo de Krieger Hamburguesería" class="header__logo">
+        </picture>
+        <div class="barraDeNav">
+            <a href="../index.html">Home</a> 
+            <a href="./menu.html">Menú</a> 
+            <a href="./pedidos.html">Pedidos</a> 
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </nav>
+    <!--MAIN DE LA PÁGINA-->
+    <main class="contacto">
+        <h1 class="title__menu">Contacto</h1>
+        <form action="./index.js" method="post">
+            <h2 class="contacto__h2">DEJANOS TU CONSULTA O SUGERENCIA</h2>
+            <ul class="contacto__menu">
+                <li class="contacto__item">
+                    <label for="Nombre y apellido">Nombre y apellido</label>
+                    <input type="text" name="Nombre y apellido" id="nombre">
+                </li>
+                <li class="contacto__item">
+                    <label for="Email">Correo electrónico</label>
+                    <input type="email" name="email" id="email">
+                </li>
+                <li class="contacto__item">
+                    <label for="¡Dejanos tu comentario!">¡Dejanos tu comentario!</label>
+                    <input type="text" name="¡Dejanos tu comentario!" id="comentario">
+                </li>
+                <li class="contacto__item">
+                    <button class="btn__contacto" type="submit">ENVIAR</button>
+                </li>
+            </ul>
+        </form>
+    </main>
+    <!--FOOTER DE LA PÁGINA-->
+    <footer class="footer__margin">
+        <ul>
+            <li>
+                <a href="http://www.instagram.com/kriegerhamburgueseria//">Instagram</a>
+            </li>
+            <li>
+                <a href="http://twitter.com/kriegerhamburgueseria//">Twitter</a>
+            </li>
+            <li>
+                <a href="http://es-la.facebook.com/kriegerhamburgueseria/">Facebook</a>
+            </li>
+            <li>
+                <p>TODOS LOS DERECHOS RESERVADOS © Krieger Hamburguesería</p>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
