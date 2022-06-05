@@ -1,0 +1,46 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1;
+    width: 100%;
+    padding-left: 100px;
+    background-image: linear-gradient(
+    180deg,
+    hsl(0deg, 99%, 19%) 0%,
+    hsl(359deg, 98%, 18%) 8%,
+    hsl(359deg, 96%, 17%) 15%,
+    hsl(359deg, 94%, 16%) 23%,
+    hsl(359deg, 92%, 15%) 31%,
+    hsl(359deg, 89%, 15%) 38%,
+    hsl(359deg, 86%, 14%) 46%,
+    hsl(0deg, 84%, 13%) 54%,
+    hsl(1deg, 84%, 12%) 62%,
+    hsl(2deg, 84%, 11%) 69%,
+    hsl(3deg, 85%, 10%) 77%,
+    hsl(3deg, 88%, 8%) 85%,
+    hsl(1deg, 93%, 7%) 92%,
+    hsl(0deg, 100%, 6%) 100%
+    );
+    height: 100px;
+    & ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        flex: 1 1 ;
+        justify-content: space-around;
+        & li a{
+            text-decoration: none;
+            font-family: $font-principal;
+            font-size: 20px;
+            color: $base;
+        }    
+    }   
+    & div p{
+        font-family: $font-principal;
+        font-size: 10px;
+        width: fit-content auto;
+        color: $base;
+    }
+}

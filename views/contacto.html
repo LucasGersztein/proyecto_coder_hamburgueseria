@@ -11,30 +11,38 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/translated.css">
 </head>
 <body>
     <!--HEADER DE LA PÁGINA-->
-    <nav class="nav">
-        <picture>
-            <img src="../images/logoh.svg" alt="Logo de Krieger Hamburguesería" class="header__logo animate__animated animate__zoomIn">
-        </picture>
-        <ul class="barraDeNav">
-            <li>
-                <a href="../index.html">Home</a> 
-            </li>
-            <li>
-                <a href="./menu.html">Menú</a> 
-            </li>
-            <li>
-                <a href="./pedidos.html">Pedidos</a> 
-            </li>
-            <li>
-                <a href="./nosotros.html">Nosotros</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>
+    <nav id="nav" class="navbar fixed-top-sm navbar-expand-md navbar-dark bg-dark" >
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <picture>
+                <img src="../images/logoh.svg" alt="Logo de Krieger Hamburguesería" class="header__logo animate__animated animate__zoomIn">
+            </picture>
+            <div class="collapse navbar-collapse justify-content-end .align-items-md-start" id="navbarNavAltMarkup">
+                <ul class="navbar-nav d-flex">
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link" href="./menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link" href="./pedidos.html">Pedidos</a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <!--MAIN DE LA PÁGINA-->
     <main class="contacto">
@@ -42,20 +50,20 @@
         <form action="./index.js" method="post">
             <h2 class="contacto__h2">DEJANOS TU CONSULTA O SUGERENCIA</h2>
             <ul class="contacto__menu">
-                <li class="contacto__item">
-                    <label for="Nombre y apellido">Nombre y apellido</label>
-                    <input type="text" name="Nombre y apellido" id="nombre">
+                <li class="mb-3 contacto__item">
+                    <label for="Nombre y apellido" class="form-label">Nombre y apellido</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </li>
+                <li class="mb-3 contacto__item">
+                    <label for="Email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </li>
+                <li class="mb-3 contacto__item">
+                    <label for="¡Dejanos tu comentario!" class="form-label">¡Dejanos tu comentario!</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </li>
                 <li class="contacto__item">
-                    <label for="Email">Correo electrónico</label>
-                    <input type="email" name="email" id="email">
-                </li>
-                <li class="contacto__item">
-                    <label for="¡Dejanos tu comentario!">¡Dejanos tu comentario!</label>
-                    <input type="text" name="¡Dejanos tu comentario!" id="comentario">
-                </li>
-                <li class="contacto__item">
-                    <button class="btn__contacto btn" type="submit">ENVIAR</button>
+                    <button class="contacto__btn btn" type="submit">ENVIAR</button>
                 </li>
             </ul>
         </form>
@@ -72,10 +80,10 @@
             <li>
                 <a href="http://es-la.facebook.com/kriegerhamburgueseria/">Facebook</a>
             </li>
-            <li>
-                <p>TODOS LOS DERECHOS RESERVADOS © Krieger Hamburguesería</p>
-            </li>
         </ul>
+        <div>
+            <p>TODOS LOS DERECHOS RESERVADOS © Krieger Hamburguesería</p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

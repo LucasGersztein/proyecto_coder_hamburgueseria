@@ -1,0 +1,68 @@
+@media (min-width: 840px) {
+    a.nav-link {
+        margin: 0em 1em 0em 1em ;
+    }
+}
+@media (max-width: 839px) {
+    a.nav-link {
+        margin: 0em 0.5em 0em 0.5em ;
+    }
+}
+@media (min-width: 768px) {
+    a.nav-link {
+        font-size: $text-medium;
+        color: $base;
+    }
+    .menu__hamburguesas {
+        padding: 0em 3em !important;
+    }
+}
+@media (max-width: 575px) {
+    .main__title {
+        font-size: $text-large !important;
+    }
+    p.main__desc {
+        font-size: $text-medium !important;
+    }
+    .menu__hamburguesas {
+        padding: 0em 2em !important;
+    }
+    .pedidos {
+    height: 800px;
+    }
+    .nosotros h1 {
+    font-size: $text-medium;
+}
+    .nosotros__p1 {
+    font-size: $text-small;
+}
+    footer ul {
+    display: flex;
+    flex-direction: column;}
+}
+@media (max-width: 440px) {
+    .nosotros {
+        height: 600px;
+
+        & h1 {
+            font-size: $text-medium;
+            gap: $spacing-small;
+            margin-top: 2em;
+        }
+        &__p {
+            font-size: $text-small;
+            line-height: 1em;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .main__title {
+        font-size: $text-medium !important;
+    }
+    p.main__desc {
+        font-size: $text-small !important;
+    }
+    .contacto {
+        margin: 0px 2em
+    }
+}

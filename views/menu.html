@@ -11,38 +11,46 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/translated.css">
 </head>
 <body>
     <!--HEADER DE LA PÁGINA-->
-    <nav class="nav">
-        <picture>
-            <img src="../images/logoh.svg" alt="Logo de Krieger Hamburguesería" class="header__logo animate__animated animate__zoomIn">
-        </picture>
-        <ul class="barraDeNav">
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="menu.html">Menú</a> 
-            </li>
-            <li>
-                <a href="./pedidos.html">Pedidos</a> 
-            </li>
-            <li>
-                <a href="./nosotros.html">Nosotros</a> 
-            </li>
-            <li>
-                <a href="./contacto.html">Contacto</a>
-            </li>
-        </ul>
+    <nav id="nav" class="navbar fixed-top-sm navbar-expand-md navbar-dark bg-dark" >
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <picture>
+                <img src="../images/logoh.svg" alt="Logo de Krieger Hamburguesería" class="header__logo animate__animated animate__zoomIn">
+            </picture>
+            <div class="collapse navbar-collapse justify-content-end .align-items-md-start" id="navbarNavAltMarkup">
+                <ul class="navbar-nav d-flex">
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link" href="./pedidos.html">Pedidos</a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <!--MAIN DE LA PÁGINA-->
     <main>
-        <h1 class="title__menu">Menú</h1>    
+        <h1 class="title__menu">Menú</h1>  
         <div class="menu row">
-            <section class="card col-lg-4 text-center">
-                <h2 class="menu__title1">Hamburguesas</h2>
-                    <ul class="menu__hamburguesas">
+            <section class="card border-light col-lg-4 text-center menu__hamburguesas">
+                <h2 class="menu__title">Hamburguesas</h2>
+                    <ul class="menu__card1">
                         <li class="menu__hamburguesas__item">
                             <h3 class="menu__hamburguesas__title">Burger Cheese - $920.00</h3>
                             <p class="menu__hamburguesas__desc">Medallón de carne 200 grs., queso cheddar (solas o con cebollas caramelizadas) Pan artesanal. Guarnición de papas rústicas.</p>
@@ -65,9 +73,9 @@
                         </li>
                     </ul>
             </section>
-            <section class="card col-lg-4 text-center">
-                    <h2 class="menu__title2">Bebidas s/ alcohol</h2>
-                        <ul class="menu__bebidas">
+            <section class="card border-light col-lg-4 text-center">
+                    <h2 class="menu__title">Bebidas s/ alcohol</h2>
+                        <ul class="menu__card2">
                             <li class="menu__bebidas__items">Red Bull - $360.00</li>
                             <li class="menu__bebidas__items">Speed - $300.00</li>
                             <li class="menu__bebidas__items">Agua con/sin gas - $210.00</li>
@@ -76,9 +84,9 @@
                             <li class="menu__bebidas__items">Exprimido naranja / limonada - $330.00</li>
                         </ul>
             </section>
-            <section class="card col-lg-4 text-center">
-                <h2 class="menu__title3">Cervezas</h2>
-                    <ul class="menu__cervezas">
+            <section class="card border-light col-lg-4 text-center">
+                <h2 class="menu__title">Cervezas</h2>
+                    <ul class="menu__card2">
                         <li class="menu_cervezas__items">Ipa - $330.00</li>
                         <li class="menu_cervezas__items">Stout - $320.00</li>
                         <li class="menu_cervezas__items">Scotish - $310.00</li>
@@ -105,10 +113,10 @@
             <li>
                 <a href="http://es-la.facebook.com/kriegerhamburgueseria/">Facebook</a>
             </li>
-            <li>
-                <p>TODOS LOS DERECHOS RESERVADOS © Krieger Hamburguesería</p>
-            </li>
         </ul>
+        <div>
+            <p>TODOS LOS DERECHOS RESERVADOS © Krieger Hamburguesería</p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

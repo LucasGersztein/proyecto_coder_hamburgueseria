@@ -1,0 +1,11 @@
+nav#nav.navbar { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+}
+.header__logo {
+    margin-left: 1em;
+    height: auto;
+    width: 15em;
+}
