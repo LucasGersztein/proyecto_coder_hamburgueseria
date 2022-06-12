@@ -1,11 +1,18 @@
   /* Colors */
+$colors: (
+    primary: #788585,
+    secondary: #600000,
+    alternative: #442912,
+    text-color: #2B2B2B,
+    base: #FFFCFC,
+);
 
-  $primary: #788585;
-  $secondary: #600000;
-  $alternative: #442912;
-  $text-color: #2B2B2B;
-  $base: #FFFCFC;
+@each $color, $value in $colors {
+    .#{$color} {
+      color: #{$value};
+    }
 
+}
    /* Spacings*/
 
   $spacing-medium: 2.4em;

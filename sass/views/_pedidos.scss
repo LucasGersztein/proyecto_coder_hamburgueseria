@@ -1,14 +1,11 @@
 .pedidos {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    @include flex(column, start, center);
     height: 1000px;
-    color: $text-color;
+    color: map-get($colors, text-color);
     background-image: url(https://images.unsplash.com/photo-1584799580661-53b7c6b99430?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
     background-size: cover;
     background-attachment: fixed;
-    text-shadow:  2px 1px 2px $base;
+    text-shadow:  2px 1px 2px map-get($colors, base);
 
     &__title {
         text-decoration: underline;
@@ -26,11 +23,11 @@
     &__btn {
         border-radius: 28px;
         font-family: $font-principal;
-        color: $base;
+        color: map-get($colors, base);
         font-size: $text-medium;
         text-decoration: none;
         padding: 1.5em 2em;
         font-weight: bold;
-        background-color: $secondary;
+        background-color: map-get($colors, secondary);
     }
 }

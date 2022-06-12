@@ -1,13 +1,9 @@
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, start, center);
 
     & section{
         &.main__section{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+            @include flex(column, start, center);
             gap: 3em;
             flex: 1 1 1;
             background-image: url(https://images.unsplash.com/photo-1516789892567-2a5f37fd9656?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80);
@@ -19,22 +15,23 @@ main {
         }
         & h1.main__title {
             padding-top: 8em;
-            color: $text-color;
+            color: map-get($colors, text-color);
             font-size: $text-xlarge;
             font-family: $font-title;
-            text-shadow:  2px 1px 2px $base;
+            text-shadow:  2px 1px 2px map-get($colors, base);
         }
         & article p.main__desc {
-            color: $text-color;
+            color: map-get($colors, text-color);
             font-size: $text-large;
             font-family: $font-principal;
-            text-shadow:  2px 1px 2px $base;
+            text-shadow:  2px 1px 2px map-get($colors, base);
         }
     }
     & section.images {
         width: 100%;
 
         &__grid {
+            @extend .images;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);

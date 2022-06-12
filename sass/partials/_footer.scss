@@ -1,8 +1,5 @@
 footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(row, space-around,center);
     flex: 1 1;
     width: 100%;
     padding-left: 100px;
@@ -25,22 +22,20 @@ footer{
     );
     height: 100px;
     & ul {
-        display: flex;
-        flex-direction: row;
+        @include flex(row, space-around, start);
         list-style: none;
         flex: 1 1 ;
-        justify-content: space-around;
         & li a{
             text-decoration: none;
             font-family: $font-principal;
             font-size: 20px;
-            color: $base;
+            color: map-get($colors, base);
         }    
     }   
     & div p{
         font-family: $font-principal;
         font-size: 10px;
         width: fit-content auto;
-        color: $base;
+        color: map-get($colors, base);
     }
 }

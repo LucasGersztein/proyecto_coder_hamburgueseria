@@ -11,7 +11,7 @@
 @media (min-width: 768px) {
     a.nav-link {
         font-size: $text-medium;
-        color: $base;
+        color: map-get($colors, base);
     }
     .menu__hamburguesas {
         padding: 0em 3em !important;

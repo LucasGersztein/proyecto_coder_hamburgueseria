@@ -1,17 +1,21 @@
+#main__menu {
+    background-image: url(https://images.unsplash.com/photo-1533631273148-264f2ec26448?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80);
+    background-size: cover;
+}
+
 .title__menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, center, center);
+    color: map-get($colors, base);
     font-family: $font-title;
     font-size: $text-large;
     text-decoration: underline;
     margin-top: 2em;
     padding-bottom: 2em;
 }
+
 .menu {
-    display: flex;
-    flex-direction: row;
-    color: $text-color;
+    @include flex(row, start, start);
+    color: map-get($colors, base);
     font-family: $font-principal;
     font-weight: bold;
     font-size: $text-xsmall;
